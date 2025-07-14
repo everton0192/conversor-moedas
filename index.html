@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Moedas</h1>
+
+    <label for="valor">Valor em Reais (BRL):</label>
+    <input type="number" id="valor" placeholder="Digite o valor" />
+
+    <label for="moeda">Converter para:</label>
+    <select id="moeda">
+      <option value="USD">Dólar (USD)</option>
+      <option value="EUR">Euro (EUR)</option>
+      <option value="GBP">Libra (GBP)</option>
+      <option value="JPY">Iene (JPY)</option>
+      <option value="AUD">Dólar Australiano (AUD)</option>
+      <option value="CAD">Dólar Canadense (CAD)</option>
+      <option value="CHF">Franco Suíço (CHF)</option>
+      <option value="CNY">Yuan Chinês (CNY)</option>
+    </select>
+
+    <button id="converter">Converter</button>
+
+    <p id="resultado"></p>
+
+    <div id="historico">
+      <h3>Histórico das conversões:</h3>
+      <ul id="listaHistorico"></ul>
+    </div>
+
+    <button id="exportar">Exportar Histórico</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
